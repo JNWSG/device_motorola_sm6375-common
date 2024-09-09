@@ -46,7 +46,7 @@ function lib_to_package_fixup_vendor_variants() {
         com.qualcomm.qti.dpm.api@1.0 | \
             vendor.qti.hardware.fm@1.0 | \
             vendor.qti.imsrtpservice@3.0)
-            echo "$1-vendor"
+            echo "$1_vendor"
             ;;
         libqsap_sdk | \
             libril | \
@@ -70,8 +70,8 @@ setup_vendor "${DEVICE_COMMON}" "${VENDOR_COMMON:-$VENDOR}" "${ANDROID_ROOT}" tr
 write_headers "bangkk corfur fogos penang rhodep miami"
 
 # The standard common blobs
-write_makefiles "${MY_DIR}/proprietary-files.txt" true
-write_makefiles "${MY_DIR}/proprietary-files-carriersettings.txt" true
+write_makefiles "${MY_DIR}/proprietary-files.txt"
+write_makefiles "${MY_DIR}/proprietary-files-carriersettings.txt"
 
 # Include IR blobs if needed
 printf "\n%s\n" "ifeq (\$(TARGET_HAS_FM),true)" >> "${PRODUCTMK}"
@@ -83,13 +83,14 @@ write_footers
 
 if [[ -s "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" ]]; then
     # Reinitialize the helper for device
+    source "${MY_DIR}/../../${VENDOR}/${DEVICE}/setup-makefiles.sh"
     setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false
 
     # Warning headers and guards
     write_headers
 
     # The standard device blobs
-    write_makefiles "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" true
+    write_makefiles "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt"
 
     # Finish
     write_footers
