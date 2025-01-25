@@ -34,6 +34,9 @@ ro.qcom.ims.use_moto_vt_ext=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 ro.media.recorder-max-base-layer-fps=60
 
+# NFC
+ro.nfc.port=I2C
+
 # Netmgrd
 persist.vendor.data.mode=concurrent
 ro.vendor.use_data_netmgrd=true

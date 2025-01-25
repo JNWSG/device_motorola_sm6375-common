@@ -213,9 +213,6 @@ persist.vendor.ims.vt.enableadb=1
 # Incremental FS
 ro.incremental.enable=true
 
-# Media
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
-
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.perf-hal.ver=2.2
