@@ -26,6 +26,9 @@ $(call inherit-product, hardware/motorola/dolby/setup.mk)
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
+# Additional
+$(call inherit-product-if-exists, vendor/motorola/additional/additional-vendor.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-yaap
