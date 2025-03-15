@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from fogos_g-user 14 U1UGS34.23-110-23-4 38326 release-keys.
+# All unpinned blobs below are extracted from fogos_g-user 15 V1UG35H.75-14 a4cca release-keys.
 
 # ADSP
 vendor/bin/adsprpcd
@@ -261,10 +261,10 @@ vendor/lib64/libsnapdragoncolor-manager.so
 vendor/lib64/libsnapdragoncolor-qdcm.so
 
 # Display (SDM)
-vendor/etc/display/advanced_sf_offsets.xml
 vendor/etc/display/DPU660.xml
 vendor/etc/display/DPU670.xml
 vendor/etc/display/DPU7__.xml
+vendor/etc/display/advanced_sf_offsets.xml
 vendor/lib64/libdisplayqos.so
 vendor/lib64/libdisplayskuutils.so
 vendor/lib64/libqseed3.so
@@ -291,6 +291,7 @@ vendor/lib64/vendor.display.postproc@1.0.so
 
 # DPM
 system/framework/tcmclient.jar
+system/lib64/vendor.qti.diaghal-V1-ndk.so
 system_ext/bin/dpmd
 system_ext/etc/dpm/dpm.conf
 system_ext/etc/init/dpmd.rc
@@ -574,8 +575,8 @@ system/etc/sysconfig/qti_whitelist.xml
 vendor/bin/irsc_util
 vendor/bin/qmipriod
 vendor/etc/init/qmipriod.rc
-vendor/etc/sec_config
 vendor/etc/seccomp_policy/qti-systemd.policy
+vendor/etc/sec_config
 vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
@@ -627,8 +628,8 @@ system_ext/etc/permissions/qti_permissions.xml
 system_ext/framework/qcrilhook.jar
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk;NODEXPO
 -vendor/app/IWlanService/IWlanService.apk;NODEXPO
-vendor/bin/adpl
 vendor/bin/hw/qcrilNrd
+vendor/bin/adpl
 vendor/bin/ks
 vendor/bin/mbm_spy
 vendor/bin/netmgrd
@@ -656,7 +657,6 @@ vendor/etc/init/qcrilNrd.rc
 vendor/etc/init/shsusrd.rc
 vendor/etc/init/vendor.qti.rmt_storage.rc
 vendor/etc/init/vendor.qti.tftp.rc
-vendor/etc/qcril_database/qcrilNr.db
 vendor/etc/qcril_database/upgrade/config/10.0_config.sql
 vendor/etc/qcril_database/upgrade/config/11.0_config.sql
 vendor/etc/qcril_database/upgrade/config/12.0_config.sql
@@ -707,6 +707,7 @@ vendor/etc/qcril_database/upgrade/ecc/9_version_qcrildb.sql
 vendor/etc/qcril_database/upgrade/other/2_version_add_wps_config_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/3_version_update_wps_config_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/6_version_change_property_table_qcrilnr.sql
+vendor/etc/qcril_database/qcrilNr.db
 vendor/etc/seccomp_policy/qcrilnr@2.0.policy
 vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
@@ -800,8 +801,8 @@ system_ext/lib64/lib-imsvtextutils.so
 system_ext/lib64/lib-imsvtutils.so
 system_ext/lib64/libdiag_system.so
 system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so
-system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
 system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so
+system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdaemon
 vendor/etc/init/ims_rtp_daemon.rc
@@ -828,6 +829,7 @@ vendor/lib64/lib-rtpsl.so
 vendor/lib64/librcc.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.1.so
+vendor/lib64/vendor.qti.hardware.radio.ims@1.10.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.2.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.3.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.4.so
