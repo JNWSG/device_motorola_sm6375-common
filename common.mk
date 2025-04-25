@@ -208,7 +208,7 @@ PRODUCT_PACKAGES += \
     liboffloadhal
 
 # Kernel
-OVERRIDE_ENABLE_UFFD_GC := false
+PRODUCT_ENABLE_UFFD_GC := true
 
 # Media
 $(foreach f,$(wildcard $(LOCAL_PATH)/configs/media/*.xml),\
