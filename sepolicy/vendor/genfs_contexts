@@ -65,8 +65,8 @@ genfscon sysfs /devices/platform/soc/4a80000.spi/spi_master/spi0/spi0.1         
 genfscon sysfs /devices/platform/soc/4a80000.spi/spi_master/spi0/spi0.0/touchscreen        u:object_r:vendor_sysfs_touchpanel:s0
 
 # Vibrator
-genfscon sysfs /devices/platform/soc/4c90000.i2c/i2c-3/3-005a/leds/vibrator     u:object_r:sysfs_vibrator:s0
-genfscon sysfs /devices/platform/soc/soc:ldo_vib/leds/vibrator                  u:object_r:sysfs_vibrator:s0
+genfscon sysfs /devices/platform/soc/4c90000.i2c/i2c-3/3-005a/leds/vibrator     u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/soc/soc:ldo_vib/leds/vibrator                  u:object_r:sysfs_leds:s0
 
 # Wakeup
 genfscon sysfs /devices/platform/soc/1e00000.qcom,ipa/wakeup/wakeup             u:object_r:sysfs_wakeup:s0
