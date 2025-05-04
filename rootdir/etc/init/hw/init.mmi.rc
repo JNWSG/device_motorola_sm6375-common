@@ -157,7 +157,7 @@ on post-fs-data
     # Setup folder for Pre-Activation Kill Switch app (PAKS)
     mkdir /mnt/vendor/persist/paks 02770 vendor_tcmd vendor_tcmd
 
-    chown vendor_pwric vendor_pwric /sys/class/power_supply/battery/cycle_count
+    chown system system /sys/class/power_supply/battery/cycle_count
     chmod 0664 /sys/class/power_supply/battery/cycle_count
     chmod 0664 /sys/class/power_supply/battery/charge_control_limit
 
