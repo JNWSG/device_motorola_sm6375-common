@@ -97,6 +97,10 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default \
     liba2dpoffload \
+    libbatterylistener \
+    libcirrusspkrprot \
+    libcomprcapture \
+    libexthwplugin \
     firmware_aw_cali.bin_symlink \
     libaudiopreprocessing \
     libbundlewrapper \
@@ -112,6 +116,7 @@ PRODUCT_PACKAGES += \
     libhfp \
     libsndmonitor \
     libspkrprot \
+    libvolumelistener \
     sound_trigger.primary.holi
 
 PRODUCT_COPY_FILES += \
