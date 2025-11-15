@@ -17,16 +17,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
-# Audio (Dolby Atmos)
-$(call inherit-product, hardware/motorola/dolby/setup.mk)
-
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # Additional
 $(call inherit-product-if-exists, vendor/motorola/additional/additional-vendor.mk)
 
-# Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-yaap
 
