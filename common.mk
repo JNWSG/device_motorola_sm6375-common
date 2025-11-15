@@ -155,6 +155,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     init.qti.display_boot.sh \
+    init.qti.display_boot.rc \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.composer-service
 
