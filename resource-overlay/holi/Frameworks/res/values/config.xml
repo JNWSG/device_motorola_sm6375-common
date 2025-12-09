@@ -69,6 +69,10 @@
     <!-- Should the pinner service pin the Camera application? -->
     <bool name="config_pinnerCameraApp">true</bool>
 
+    <!-- Whether WM DisplayContent supports high performance transitions
+         (lower-end devices may want to disable) -->
+    <bool name="config_deviceSupportsHighPerfTransitions">false</bool>
+
     <!-- Should the pinner service pin the Home application? -->
     <bool name="config_pinnerHomeApp">true</bool>
 </resources>
