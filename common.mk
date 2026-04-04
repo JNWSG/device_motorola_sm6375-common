@@ -308,7 +308,8 @@ TARGET_BOARD_PLATFORM := holi
 TARGET_PROVIDES_POWERHAL := true
 
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.pixel-libperfmgr
+    android.hardware.power-service.pixel-libperfmgr \
+    libqti-perfd-client
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
@@ -334,7 +335,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/motorola \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/qcom-caf/wlan
+    hardware/qcom-caf/wlan \
+    hardware/qcom-caf/common/libqti-perfd-client
 
 # Disable debug info gen
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false

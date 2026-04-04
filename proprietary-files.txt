@@ -536,9 +536,6 @@ vendor/lib64/libmmosal.so;MODULE_SUFFIX=_vendor
 # OEM
 vendor/bin/motobox;SYMLINK=vendor/bin/expat
 
-# Perfd Client(For FP it's required)
-vendor/lib64/libqti-perfd-client.so
-
 # Peripheral manager
 vendor/bin/pm-proxy
 vendor/bin/pm-service
