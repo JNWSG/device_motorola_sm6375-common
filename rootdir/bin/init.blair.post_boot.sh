@@ -25,7 +25,5 @@ echo 0-1 > /dev/cpuset/background/cpus
 echo 0-3 > /dev/cpuset/system-background/cpus
 echo 0-3 > /dev/cpuset/restricted/cpus
 echo 1-2 > /dev/cpuset/audio-app/cpus
-
-# Sched
-echo 95 > /proc/sys/kernel/sched_upmigrate
-echo 85 > /proc/sys/kernel/sched_downmigrate
+echo 0-7 > /dev/cpuset/top-app/cpus
+echo 0-6 > /dev/cpuset/foreground/cpus
